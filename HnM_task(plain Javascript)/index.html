@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Search Application</title>
+    <link rel="stylesheet" type="text/css" href="WEB-INF/content/css/style.css">
+    <link rel="stylesheet" type="text/css" href="WEB-INF/content/lib/css/jquery-ui.min.css">
+    <script  src="WEB-INF/content/lib/js/jquery.min.js"></script>
+    <script  src="WEB-INF/content/lib/js/jquery-ui.min.js"></script>
+    <script  src="WEB-INF/content/lib/js/date-format.min.js"></script>
+    <script  src="WEB-INF/content/lib/js/purify.min.js"></script>
+    <script  src="WEB-INF/content/js/autocomplete.js"></script>
+</head>
+<body>
+<main>
+    <h1>Simple Search Application</h1>
+    <div class="ui-widget">
+        <div class="input-icons">
+            <i class="close"></i>
+            <input id="search" type="text" name="Autocomplete" value="" placeholder="Write your search here"/>
+        </div>
+        <section>
+            <h2 class="header-search">
+                Search History
+                <a href="#" id="clearHistory">Clear search history</a>
+            </h2>
+            <ul id="listSelectedResults">
+            </ul>
+        </section>
+    </div>
+    <button class="btn-delete">
+        Delete
+    </button>
+</main>
+</body>
+</html>
