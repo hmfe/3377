@@ -1,0 +1,58 @@
+.search
+  width: 40%
+  background-color: $background-color-search
+  padding: 2rem
+  margin-bottom: 20px
+  @media (max-width: $screen-sm)
+    width: initial
+    padding: 1rem
+  input, section, #react-autowhatever-search > ul
+    box-sizing: border-box
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    width: 100%
+    padding: 1rem 0 1rem 0.5rem
+
+  ul
+    list-style-type: none
+    padding-inline-start: 0px
+
+#listSelectedResults
+  li
+    border-bottom: 1px solid $text-color-secondary
+    p
+      .selected-option-date, .close
+        color: $text-color-secondary
+        float: right
+      @media (max-width: $screen-sm)
+        display: inline-block
+        width: 100%
+        span
+          overflow: hidden
+          white-space: nowrap
+          text-overflow: ellipsis
+          &.selected-option-date
+            width: 30%
+          &.selected-option
+            width: 50%
+            float: left
+.header-search
+  position: relative
+  font-size: $font-size-title
+  padding: 1rem 0
+  border-bottom: 1px solid
+  a
+    font-size: $font-size-link !important
+    float: right
+
+
+#react-autowhatever-search
+  width: 100%
+  background-color: $background-color-results
+  ul
+    margin: 0
+    li
+      cursor: pointer
+      padding: 0.3rem 0
+
+
