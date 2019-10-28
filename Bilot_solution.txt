@@ -1,0 +1,3 @@
+This solution is using react
+
+First step is going to directory hm-app and run npm install so all packages can be install
