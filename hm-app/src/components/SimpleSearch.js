@@ -41,6 +41,7 @@ class SimpleSearch extends React.Component{
         return (year + '/' + month + '/' + day + ' ' + hours + ':' + min + ':' + sec);
     };
 
+
     onSuggestionSelected = (event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) =>{
         const  date =this.getParsedDate(new Date(Date.now()));
         const selectedSuggestion ={
@@ -66,6 +67,13 @@ class SimpleSearch extends React.Component{
 
     };
 
+    handleCleanValue = () => {
+      this.setState(
+          {
+              value: ''
+          });
+    };
+
     onSuggestionsClearRequested = () => {
         this.setState({
             suggestions: []
@@ -87,7 +95,7 @@ class SimpleSearch extends React.Component{
         return(
             <div className="search">
                 <div className="input-icons">
-                    <i className="close"></i>
+                    <i className="close" onClick={this.handleCleanValue}></i>
                     <Autosuggest
                         suggestions={suggestions}
                         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
