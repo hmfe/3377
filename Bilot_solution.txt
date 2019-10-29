@@ -1,3 +1,4 @@
 This solution is using react
 
-First step is going to directory hm-app and run npm install so all packages can be install
+First step is going to directory hm-app with terminal and run "npm install" so all packages can be install
+Second step , go to your terminal and run "npm start", application will start on port 3000 in your local
